@@ -3,17 +3,17 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    background-color: rgba(114, 169, 236, 0.306);
+    background-color: rgb(203, 137, 30);
 }
 
 header {
-    background: url(mech.mp4);
+    /* background: url(mech.mp4); */
     color: #ffffff;
     padding: 3%;
     text-align: center;
 }
 
-.background-video {
+.background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -151,7 +151,7 @@ section {
     margin: 1rem auto;
     max-width: 800px;
     color: #000000;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.875);
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial shadow effect */
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
@@ -171,7 +171,7 @@ footer {
     border-radius: 10px;
     text-align: center;
     padding: 0.1rem;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.875);
     color: #000000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
