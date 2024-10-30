@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #2e2e2e;
+}
+
+header {
+    /* background: url(mech.mp4); */
+    color: #ffffff;
+    padding: 3%;
+    text-align: center;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 10px; /* Adjust the value for more or less rounded corners */
+    z-index: -1; /* Ensures the video is behind other elements */
+}
+
+nav {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+}
+
+.profile-img {
+    height: 50px; /* Adjust the size as needed */
+    width: 50px; /* Adjust the size as needed */
+    border-radius: 50%;
+    margin-right: 10px; /* Space between image and text */
+}
+
+.edu-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* padding: 2rem; */
+    margin: 1rem auto;
+    max-width: 1200px;
+    border-radius: 15px;
+}
+
+.edu-item {
+    color: white;
+    text-align: center;
+    width: 28%; /* Ensure items fit nicely within the container, adjust as needed */
+    /* margin-bottom: 2rem; */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.edu-container img {
+    border-radius: 15px; /* Adjust the value for more or less rounded corners */
+    width: 100%; /* Ensure images fit nicely within their container */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 250px; /* Adjust to control the maximum height */
+    object-fit: fill; /* Ensures the image covers the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.edu-container img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect on hover */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 3000px;
+    margin: 0 auto;
+}
+
+.nav-name-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.nav-name-container img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+    margin-right: 10px; /* Space between image and text */
+}
+
+.nav-mister-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background similar to nav container ul */
+    padding: 1rem; /* Add padding if needed */
+    border-radius: 10px; /* Optional: add rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    -webkit-text-fill-color: #ffffff;
+}
+
+.nav-mister-container:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center; /* Vertically center the text and image */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li button {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.875);
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+section:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect on hover */
+}
+
+section ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+footer {
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.1rem;
+    background-color: rgba(255, 255, 255, 0.875);
+    color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery{
+    color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .edu-container {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .edu-item {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    header, section, footer {
+        padding: 1rem;
+    }
+
+    .nav-name-container, .nav-mister-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 2%;
+    }
+
+    .profile-img, .nav-name-container img {
+        height: 40px;
+        width: 40px;
+    }
+
+    nav h3 {
+        font-size: 1rem;
+    }
+
+    nav ul li button {
+        padding: 0.3rem 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    .edu-container img {
+        max-height: 200px;
+    }
+
+    .edu-item {
+        width: 100%;
+    }
+}
