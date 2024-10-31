@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
-    <h1 class="gallery">Coming Soon...</h1>
+    <div class="gallery">
+        <img src="assets/teacher.jpeg" alt="teacher" onclick="openModal(this)">
+        <img src="assets/students.jpeg" alt="students" onclick="openModal(this)">
+        <img src="assets/aadarsh.jpeg" alt="aadarsh" onclick="openModal(this)">
+        <img src="assets/nss.jpeg" alt="nss" onclick="openModal(this)">
+    </div>
+    <!-- Modal -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="modal-content">
+    </div>
+    <script src="gallery.js"></script>
 </body>
 </html>
